@@ -31,7 +31,6 @@ public class AreaDirector : Employee
             customerProcess.Description = "Ödeme bölge müdürü tarafından yapılamadı, müşteriye bilgi verildi";
             _context.CustomerProcesses.Add(customerProcess);
             _context.SaveChanges();
-            NextApprover.ProcessRequest(model);
         }
     }
 }

@@ -5,13 +5,7 @@ namespace ChainOfResponsibilityProject.ChainOfResponsibility;
 
 public class Treasurer : Employee
 {
-    private readonly Context _context;
-
-    public Treasurer(Context context)
-    {
-        _context = context;
-    }
-
+   Context _context = new Context();
     public override void ProcessRequest(CustomerProcessViewModel model)
     {
         if (model.Account <= 80000)
